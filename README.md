@@ -32,3 +32,17 @@ For more information on local development tools, see [Local Development Tooling:
   - For configs, see `prettier.config.js` and `eslintrc.js`.
 - `prettier:write` : Formats JS and JSON files in `src`.
   - For configs, see `prettier.config.js`.
+
+# HubSpot CMS Hub - Building an webpage feedback module that integrates with Airtable using Vue.js and HubSpot serverless functions
+This project contains the following core components:
+- A HubSpot CMS module that utilizes Vue.js for client rendering and UI build
+- A HubSpot serverless lambda function that sends data to an Airtable that acts as a database of webpage feedback
+
+There are several core concepts across different systems that this project showcases:
+
+- Using webpack & babel to build the files for upload to the HubSpot CMS Design system
+- Client side rendering using vue.js
+- Creating vue data bindings and event listeners that capture user input and communicate with a web service
+- Making AJAX HTTP requests to a web service - in this case, a HubSpot CMS serverless lambda function
+- Using a serverless lambda function to interact with another REST API that requires authentication
+- Returning data from the function and rendering that data in the client (also using vue.js)

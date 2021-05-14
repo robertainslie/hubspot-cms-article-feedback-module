@@ -1,27 +1,16 @@
 <template>
-  <div class="cms-vue-boilerplate-container">
-    <div class="spinning-logo-container">
-      <SpinningLogo :src="vueLogo" alt="Vue logo" />
-      <SpinningLogo :src="sprocketLogo" alt="sprocket logo" isSprocket="true" />
-    </div>
-    <p>Edit <code>src/App.js</code> and save to reload.</p>
-    <Card :initialClickCount="moduleData.initial_count" />
-  </div>
+  <ArticleFeedback />
 </template>
 
 <script>
-import Card from '@/components/Card.vue';
-import SpinningLogo from '@/components/SpinningLogo.vue';
-import sprocketLogo from '@/assets/sprocket.svg';
-import vueLogo from '@/assets/vue.svg';
+import ArticleFeedback from '@/components/ArticleFeedback.vue';
 
 export default {
   name: 'App',
   props: ['moduleData'],
   data: function() {
     return {
-      sprocketLogo,
-      vueLogo,
+
     };
   },
   created: function() {
@@ -32,8 +21,7 @@ export default {
     );
   },
   components: {
-    Card,
-    SpinningLogo,
+    ArticleFeedback
   },
 };
 </script>

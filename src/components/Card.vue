@@ -4,7 +4,7 @@
       {{ reasonsText }}
     </p>
     <button class="btn" v-on:click="increaseClickCount">
-      Click me!
+      Click me and what happens when I change?!
     </button>
   </div>
 </template>
